@@ -1,4 +1,32 @@
-/**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: app.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: app.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
  * Constante que selecciona el formulario de registro de citas.
  * @constant appointmentForm 
  */
@@ -138,48 +166,48 @@ class UI{
             //Propietario
             const ownerElement = document.createElement('p');
             ownerElement.innerHTML = `
-                <span class="font-weight-bolder">Propietario: </span> ${propietario}
+                &lt;span class="font-weight-bolder">Propietario: &lt;/span> ${propietario}
             `;
 
             //Teléfono
             const phoneElement = document.createElement('p');
             phoneElement.innerHTML = `
-                <span class="font-weight-bolder">Teléfono: </span> ${telefono}
+                &lt;span class="font-weight-bolder">Teléfono: &lt;/span> ${telefono}
             `;
 
             //Fecha
             const dateElement = document.createElement('p');
             dateElement.innerHTML = `
-                <span class="font-weight-bolder">Fecha: </span> ${fecha}
+                &lt;span class="font-weight-bolder">Fecha: &lt;/span> ${fecha}
             `;
 
             //Hora
             const timeElement = document.createElement('p');
             timeElement.innerHTML = `
-                <span class="font-weight-bolder">Hora: </span> ${hora}
+                &lt;span class="font-weight-bolder">Hora: &lt;/span> ${hora}
             `;
 
             //Síntomas
             const symptomsElement = document.createElement('p');
             symptomsElement.innerHTML = `
-                <span class="font-weight-bolder">Síntomas: </span> ${sintomas}
+                &lt;span class="font-weight-bolder">Síntomas: &lt;/span> ${sintomas}
             `;
 
             //Botón eliminar cita
             const btnDelete = document.createElement('button');
             btnDelete.classList.add('btn', 'btn-danger', 'mr-2');
-            btnDelete.innerHTML = `Eliminar <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>`;
+            btnDelete.innerHTML = `Eliminar &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          &lt;/svg>`;
 
             btnDelete.onclick = () => deleteAppointmentFnc(id);
 
             //Botón editar cita
             const btnEdit = document.createElement('button');
             btnEdit.classList.add('btn', 'btn-info', 'mr-2');
-            btnEdit.innerHTML = `Editar <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-          </svg>`;
+            btnEdit.innerHTML = `Editar &lt;svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            &lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+          &lt;/svg>`;
             btnEdit.onclick = () => editAppointmentFnc(appointment);
 
             //Agregar Elementos a divAppointment
@@ -384,3 +412,26 @@ const editAppointmentFnc = function(appointment){
 
 
 
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#addAppointment">addAppointment</a></li><li><a href="global.html#appointmentContainer">appointmentContainer</a></li><li><a href="global.html#appointmentData">appointmentData</a></li><li><a href="global.html#appointmentForm">appointmentForm</a></li><li><a href="global.html#appointmentObj">appointmentObj</a></li><li><a href="global.html#dateInput">dateInput</a></li><li><a href="global.html#deleteAppointment">deleteAppointment</a></li><li><a href="global.html#deleteAppointmentFnc">deleteAppointmentFnc</a></li><li><a href="global.html#editAppointment">editAppointment</a></li><li><a href="global.html#editAppointmentFnc">editAppointmentFnc</a></li><li><a href="global.html#editMode">editMode</a></li><li><a href="global.html#eventListeners">eventListeners</a></li><li><a href="global.html#hoursInput">hoursInput</a></li><li><a href="global.html#petInput">petInput</a></li><li><a href="global.html#petOwnerInput">petOwnerInput</a></li><li><a href="global.html#phoneInput">phoneInput</a></li><li><a href="global.html#resetObject">resetObject</a></li><li><a href="global.html#showAlert">showAlert</a></li><li><a href="global.html#showAppointments">showAppointments</a></li><li><a href="global.html#symptomsInput">symptomsInput</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Mon Aug 16 2021 16:49:59 GMT-0600 (hora de verano del Pacífico de México)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>
